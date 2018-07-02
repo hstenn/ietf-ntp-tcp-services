@@ -5,6 +5,8 @@
 <!-- One method to get references from the online citation libraries.
      There has to be one entity for each item to be referenced. 
      An alternate method (rfc include) is described in the references. -->
+<!ENTITY RFC5705 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5705.xml">
+<!ENTITY RFC7301 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.7301.xml">
 <!ENTITY RFC5905 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5905.xml">
 <!ENTITY RFC5906 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5906.xml">
 <!ENTITY RFC2827 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2827.xml">
@@ -166,26 +168,24 @@
          keywords will be used for the search engine. -->
 
     <abstract>
-      <t>NTP was assigned port number 123 in 1985, in <xref
-      target="RFC960">RFC 960</xref>.  Traditionally, it has only used
-      the UDP port as while UDP is useful for time synchronization,
-      TCP is not suitable for time synchronization.  UDP packet have
-      length limits, and there are rate limits imposed by the protocol
-      specification.  Between the UDP packet length and rate limits,
-      some other mechanism must be provided for efficient exchange of
-      larger data packets.  A TCP connection can be used for these
-      uses.  Additionally, we can perform better authentication and
-      authorization checks using a TCP connection.</t>
+      <t>NTP was assigned port number 123 in 1985, in RFC 960.
+      Traditionally, it has only used the UDP port as while UDP is useful
+      for time synchronization, TCP is not suitable for time
+      synchronization.  UDP packet have length limits, and there are rate
+      limits imposed by the protocol specification.  Between the UDP packet
+      length and rate limits, some other mechanism must be provided for
+      efficient exchange of larger data packets.  A TCP connection can be
+      used for these uses.  Additionally, we can perform better
+      authentication and authorization checks using a TCP connection.</t>
     </abstract>
   </front>
 
   <middle>
     <section title="Introduction">
-      <t>NTP was assigned port number 123 in 1985, in <xref
-      target="RFC960">RFC 960</xref>.  The NTP protocol only uses UDP
-      for its work, and UDP is an appropriate protocol for time
-      synchronization.  However, there are other needs for NTP,
-      including monitoring and control, and ephemeral key exchange.</t>
+      <t>NTP was assigned port number 123 in 1985, in RFC 960.  The NTP
+      protocol only uses UDP for its work, and UDP is an appropriate
+      protocol for time synchronization.  However, there are other needs for
+      NTP, including monitoring and control, and ephemeral key exchange.</t>
 
       <t>For some of these cases, a TCP connection is much better.</t>
 
@@ -252,6 +252,10 @@
       <!--?rfc include="http://xml.resource.org/public/rfc/bibxml/reference.RFC.2119.xml"?-->
 
       &RFC2119;
+
+      &RFC5705;
+
+      &RFC7301;
 
       <!--?rfc include="http://xml.resource.org/public/rfc/bibxml/reference.RFC.5905.xml"?-->
 
